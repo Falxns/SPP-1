@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="styles/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game World</title>
-</head>
-<header>
-    <button><a href="pages/login.html">Login</a></button>
-    <button><a href="pages/registration.html">Register</a></button>
-</header>
-<body>
-    <h1>Catalog</h1>
-    <button><a href="pages/addgame.html">Add game</a></button>
-    <div>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </div>
+  </head>
+  <header class="header">
+    <button>
+      <a href="index.html">
+        <img class="img-home" src="assets/images/home.svg" alt="Home" />
+      </a>
+    </button>
+  </header>
+  <body>
+    <h1 class="head">CATALOG</h1>
+    <button>
+      <a class="anchor-add-game" href="pages/addgame.html">Add game</a>
+    </button>
+    <ul>
+      <li>
+        <label for="">Platform</label>
+        <select name="" id="">
+          <option value="">PC</option>
+          <option value="">Xbox</option>
+          <option value="">Playstation</option>
+          <option value="">Nintendo Switch</option>
+        </select>
+      </li>
+      <li>
+        <label for="">Genre</label>
+        <select name="" id="">
+          <option value="">Shooter</option>
+          <option value="">RPG</option>
+          <option value="">Strategy</option>
+          <option value="">Racing</option>
+          <option value="">Roguelike</option>
+          <option value="">Simulator</option>
+          <option value="">Visual Novel</option>
+        </select>
+      </li>
+      <li>
+        <label for=""> Maturity rating</label>
+        <select name="" id="">
+          <option value="">4+</option>
+          <option value="">12+</option>
+          <option value="">16+</option>
+          <option value="">18+</option>
+        </select>
+      </li>
+      <li>
+        <label for="">Multiplayer</label>
+        <input type="checkbox" name="" id="" />
+      </li>
+    </ul>
+    <button type="submit">Apply</button>
     <table>
-        <td><a href=""><img src="" alt=""></a></td>
-        <td><a href=""><img src="" alt=""></a></td>
-        <td><a href=""><img src="" alt=""></a></td>
-        <td><a href=""><img src="" alt=""></a></td>
+      <td>
+        <a href="">
+          <img src="" alt="" />
+          <p>Name1</p>
+        </a>
+      </td>
+      <td>
+        <a href="">
+          <img src="" alt="" />
+          <p>Name2</p>
+        </a>
+      </td>
+      <td>
+        <a href="">
+          <img src="" alt="" />
+          <p>Name3</p>
+        </a>
+      </td>
+      <td>
+        <a href="">
+          <img src="" alt="" />
+          <p>Name4</p>
+        </a>
+      </td>
     </table>
-</body>
-<footer>
-    <label>Contact us:</label>
-</footer>
+  </body>
+  <footer>
+    <p>Contact us:</p>
+    <a href="https://vk.com" target="_blank" rel="noreferrer noopener">
+      <img src="assets/images/vk.svg" alt="VK" />
+    </a>
+    <a
+      href="https://www.instagram.com"
+      target="_blank"
+      rel="noreferrer noopener"
+    >
+      <img src="assets/images/instagram.svg" alt="Instagram" />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+      <img src="assets/images/twitter.svg" alt="Twitter" />
+    </a>
+    <p>©2021</p>
+  </footer>
 </html>
