@@ -6,97 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game World</title>
   </head>
-  <header class="header">
-    <button>
-      <a href="index.html">
-        <img class="img-home" src="assets/images/home.svg" alt="Home" />
-      </a>
-    </button>
-  </header>
   <body>
-    <h1 class="head">CATALOG</h1>
-    <button>
-      <a class="anchor-add-game" href="pages/addgame.html">Add game</a>
-    </button>
-    <ul>
-      <li>
-        <label for="">Platform</label>
-        <select name="" id="">
-          <option value="">PC</option>
-          <option value="">Xbox</option>
-          <option value="">Playstation</option>
-          <option value="">Nintendo Switch</option>
-        </select>
-      </li>
-      <li>
-        <label for="">Genre</label>
-        <select name="" id="">
-          <option value="">Shooter</option>
-          <option value="">RPG</option>
-          <option value="">Strategy</option>
-          <option value="">Racing</option>
-          <option value="">Roguelike</option>
-          <option value="">Simulator</option>
-          <option value="">Visual Novel</option>
-        </select>
-      </li>
-      <li>
-        <label for=""> Maturity rating</label>
-        <select name="" id="">
-          <option value="">4+</option>
-          <option value="">12+</option>
-          <option value="">16+</option>
-          <option value="">18+</option>
-        </select>
-      </li>
-      <li>
-        <label for="">Multiplayer</label>
-        <input type="checkbox" name="" id="" />
-      </li>
-    </ul>
-    <button type="submit">Apply</button>
-    <table>
-      <td>
-        <a href="">
-          <img src="" alt="" />
+    <header>
+      <a href="index.html" class="img-anchor">
+        <img class="img-header" src="assets/icons/home.svg" alt="Home" />
+      </a>
+      <h3>Game World</h3>
+      <a href="pages/addgame.html" class="img-anchor">
+        <img class="img-header" src="assets/icons/plus.svg" alt="Add" />
+      </a>
+    </header>
+    <h1 class="head-line">CATALOG</h1>
+    <div class="cols-wrapper">
+      <div class="filters-list">
+        <ul>
+          <li class="filters-list-item">
+            <label class="filter-label" for="">Platform</label>
+            <br />
+            <select class="filter-label" name="" id="">
+              <option value="">PC</option>
+              <option value="">Xbox</option>
+              <option value="">Playstation</option>
+              <option value="">Nintendo Switch</option>
+            </select>
+          </li>
+          <li class="filters-list-item">
+            <label class="filter-label" for="">Genre</label>
+            <br />
+            <select class="filter-label" name="" id="">
+              <option value="">Shooter</option>
+              <option value="">RPG</option>
+              <option value="">Strategy</option>
+              <option value="">Racing</option>
+              <option value="">Roguelike</option>
+              <option value="">Simulator</option>
+              <option value="">Visual Novel</option>
+            </select>
+          </li>
+          <li class="filters-list-item">
+            <label class="filter-label" for=""> Maturity rating</label>
+            <br />
+            <select class="filter-label" name="" id="">
+              <option value="">4+</option>
+              <option value="">12+</option>
+              <option value="">16+</option>
+              <option value="">18+</option>
+            </select>
+          </li>
+        </ul>
+        <input class="filter-label" type="submit" value="Apply" />
+      </div>
+      <div class="games-list">
+        <a href="" class="game-card">
+          <img src="./assets/images/1.jpg" alt="game" class="game-cover" />
+          <p>Genshin Impact</p>
+          <p>$Free</p>
+        </a>
+        <a href="" class="game-card">
+          <img src="./assets/images/1.jpg" alt="game" class="game-cover" />
           <p>Name1</p>
+          <p>$20.99</p>
         </a>
-      </td>
-      <td>
-        <a href="">
-          <img src="" alt="" />
-          <p>Name2</p>
+        <a href="" class="game-card">
+          <img src="./assets/images/1.jpg" alt="game" class="game-cover" />
+          <p>Name1</p>
+          <p>$20.99</p>
         </a>
-      </td>
-      <td>
-        <a href="">
-          <img src="" alt="" />
-          <p>Name3</p>
+        <a href="" class="game-card">
+          <img src="./assets/images/1.jpg" alt="game" class="game-cover" />
+          <p>Name1</p>
+          <p>$20.99</p>
         </a>
-      </td>
-      <td>
-        <a href="">
-          <img src="" alt="" />
-          <p>Name4</p>
+        <a href="" class="game-card">
+          <img src="./assets/images/1.jpg" alt="game" class="game-cover" />
+          <p>Name1</p>
+          <p>$20.99</p>
         </a>
-      </td>
-    </table>
+        <a href="" class="game-card">
+          <img src="./assets/images/1.jpg" alt="game" class="game-cover" />
+          <p>Name1</p>
+          <p>$20.99</p>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-p">Contact us:</p>
+      <a href="https://vk.com" target="_blank" rel="noreferrer noopener">
+        <img class="footer-icon" src="assets/icons/vk.svg" alt="VK" />
+      </a>
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <img
+          class="footer-icon"
+          src="assets/icons/instagram.svg"
+          alt="Instagram"
+        />
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+        <img class="footer-icon" src="assets/icons/twitter.svg" alt="Twitter" />
+      </a>
+      <p class="footer-p">©2021</p>
+    </footer>
   </body>
-  <footer>
-    <p>Contact us:</p>
-    <a href="https://vk.com" target="_blank" rel="noreferrer noopener">
-      <img src="assets/images/vk.svg" alt="VK" />
-    </a>
-    <a
-      href="https://www.instagram.com"
-      target="_blank"
-      rel="noreferrer noopener"
-    >
-      <img src="assets/images/instagram.svg" alt="Instagram" />
-    </a>
-    <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
-      <img src="assets/images/twitter.svg" alt="Twitter" />
-    </a>
-    <p>©2021</p>
-  </footer>
 </html>
