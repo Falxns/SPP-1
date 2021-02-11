@@ -18,6 +18,9 @@
   "homepage": "https://github.com/Falxns/SPP-1#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0"
+    "express-form-data": "^2.0.14",
+    "express-handlebars": "^5.2.0",
+    "mongodb": "^3.6.4",
+    "mongoose": "^5.11.15"
   }
 }
