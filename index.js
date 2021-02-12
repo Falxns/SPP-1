@@ -39,13 +39,18 @@ app.set("view engine", "handlebars");
 app.post("/game", function (req, res) {
   const { title, platform, genre, maturity, price, desc, image } = req.body;
 
-  const imageName = mongoose.Types.ObjectId().toHexString() + ".jpg";
-  const imagePath = "/public/images/games/" + imageName;
+  let imageName = "";
+  if (image) {
+    imageName = mongoose.Types.ObjectId().toHexString() + ".jpg";
+    const imagePath = "/public/images/games/" + imageName;
 
-  fs.writeFileSync(
-    path.join(process.cwd(), imagePath),
-    fs.readFileSync(image.path)
-  );
+    fs.writeFileSync(
+      path.join(process.cwd(), imagePath),
+      fs.readFileSync(image.path)
+    );
+  } else {
+    imageName = "default-img.png";
+  }
 
   const game = new Game({
     title,

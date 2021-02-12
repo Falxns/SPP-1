@@ -12,7 +12,7 @@
         <a href="/" class="img-anchor">
         	<img class="img-header" src="/assets/icons/home.svg" alt="Home" />
       	</a>
-      	<h3>Game World</h3>
+      	<h3 class="header-title">Game World</h3>
       	<a href="/pages/addgame.html" class="img-anchor">
         	<img class="img-header" src="/assets/icons/plus.svg" alt="Add" />
       	</a>
@@ -55,31 +55,36 @@
 							</select>
 						</li>
 					</ul>
-					<input class="filter-label" type="submit" value="Apply" />
+					<input class="filter-button" type="submit" value="Apply" />
 				</form>
 				<div class="games-list">
 					{{#each games}}
-						<form method="GET" action="/delete/{{_id}}" enctype="multipart/form-data" class="game-card">
-							<input class="delete-button" type="submit" value="x"/>
+						<div class="game-card">
+							<a href="/delete/{{_id}}" class="delete-button"></a>
 							<a href="http://localhost:3000/game/{{_id}}">
 								<img src="{{imageUrl}}" alt="game" class="game-cover" />
 								<p class="game-title" >{{title}}</p>
-								<p class="game-price">${{price}}</p>
+								{{#if price}}
+									<p class="game-price">${{price}}</p>
+								{{else}}
+									<img src="/assets/icons/free.svg" alt="Free" class="game-price-free">
+								{{/if}}
 							</a>
-						</form>
+						</div>
 					{{/each}}
 				</div>
     	</div>
     </div>
     <footer>
       <p class="footer-p">Contact us:</p>
-      <a href="https://vk.com" target="_blank" rel="noreferrer noopener">
+      <a href="https://vk.com" target="_blank" rel="noreferrer noopener" class="img-anchor">
         <img class="footer-icon" src="/assets/icons/vk.svg" alt="VK" />
       </a>
       <a
         href="https://www.instagram.com"
         target="_blank"
         rel="noreferrer noopener"
+				class="img-anchor"
       >
         <img
           class="footer-icon"
@@ -87,7 +92,7 @@
           alt="Instagram"
         />
       </a>
-      <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+      <a href="https://twitter.com" target="_blank" rel="noreferrer noopener" class="img-anchor">
         <img class="footer-icon" src="/assets/icons/twitter.svg" alt="Twitter" />
       </a>
       <p class="footer-p">©2021</p>
