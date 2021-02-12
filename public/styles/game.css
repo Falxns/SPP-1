@@ -7,6 +7,13 @@
 
 body {
   background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  flex: 1;
 }
 
 header {
@@ -71,6 +78,7 @@ footer {
 
 .cols-wrapper {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .image {
@@ -87,24 +95,26 @@ footer {
   width: 50%;
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: left;
   padding: 0 50px;
 }
 
 .info-list-item {
   background-color: grey;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
 }
 
 .info-label {
   font-size: 20px;
   width: 100%;
+  padding: 2px 5px;
 }
 
 .info-field {
   background-color: white;
   font-size: 20px;
   width: 100%;
+  padding: 5px 5px;
 }
 
 .info-bottom {

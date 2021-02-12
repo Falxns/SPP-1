@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
     <link rel="stylesheet" href="/styles/game.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
-</head>
-<body>
-<header>
-    <a href="/" class="img-anchor">
-        <img class="img-header" src="/assets/icons/home.svg" alt="Home" />
-    </a>
-    <h3>Game World</h3>
-    <a href="/pages/addgame.html" class="img-anchor">
-        <img class="img-header" src="/assets/icons/plus.svg" alt="Add" />
-    </a>
-</header>
-<h1 class="head-line">{{title}}</h1>
-<div class="game-area">
-    <div class="cols-wrapper">
-        <div class="image">
-            <img src="{{imageUrl}}" alt="Image" />
-        </div>
-        <div class="col-info">
-          <ul>
-            <li class="info-list-item">
-              <h4 class="info-label">Platform</h4>
-              <p class="info-field">{{platform}}</p>
-            </li>
-            <li class="info-list-item">
-              <h4 class="info-label">Genre</h4>
-              <p class="info-field">{{genre}}</p>
-            </li>
-            <li class="info-list-item">
-              <h4 class="info-label"> Maturity rating</h4>
-              <p class="info-field">{{maturity}}+</p>
-            </li>
-            <li class="info-list-item">
-              <h4 class="info-label">Price</h4>
-              <p class="info-field">${{price}}</p>
-            </li>
-          </ul>
-        </div>
-    </div>
-    <div class="info-bottom">
-        <div class="info-list-item">
-          <h4 class="info-label">Description</h4>
-          <p class="info-field">{{desc}}</p>
-        </div>
-    </div>
-</div>
-<footer>
-    <p class="footer-p">Contact us:</p>
-    <a href="https://vk.com" target="_blank" rel="noreferrer noopener">
-        <img class="footer-icon" src="/assets/icons/vk.svg" alt="VK" />
-    </a>
-    <a
-        href="https://www.instagram.com"
-        target="_blank"
-        rel="noreferrer noopener"
-    >
-        <img
-          class="footer-icon"
-          src="/assets/icons/instagram.svg"
-          alt="Instagram"
-        />
-    </a>
-    <a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
-        <img class="footer-icon" src="/assets/icons/twitter.svg" alt="Twitter" />
-    </a>
-    <p class="footer-p">©2021</p>
-</footer>
-</body>
+	</head>
+	<body>
+		<div class="content">
+			<header>
+				<a href="/" class="img-anchor">
+					<img class="img-header" src="/assets/icons/home.svg" alt="Home" />
+				</a>
+				<h3>Game World</h3>
+				<a href="/pages/addgame.html" class="img-anchor">
+					<img class="img-header" src="/assets/icons/plus.svg" alt="Add" />
+				</a>
+			</header>
+			<h1 class="head-line">{{title}}</h1>
+			<div class="game-area">
+				<div class="cols-wrapper">
+					<div class="image">
+						<img src="{{imageUrl}}" alt="Image" />
+					</div>
+					<div class="col-info">
+						<ul>
+							<li class="info-list-item">
+								<h4 class="info-label">Platform</h4>
+								<p class="info-field">{{platform}}</p>
+							</li>
+							<li class="info-list-item">
+								<h4 class="info-label">Genre</h4>
+								<p class="info-field">{{genre}}</p>
+							</li>
+							<li class="info-list-item">
+								<h4 class="info-label"> Maturity rating</h4>
+								<p class="info-field">{{maturity}}+</p>
+							</li>
+							<li class="info-list-item">
+								<h4 class="info-label">Price</h4>
+								<p class="info-field">${{price}}</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="info-bottom">
+					<div class="info-list-item">
+						<h4 class="info-label">Description</h4>
+						<p class="info-field">{{desc}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p class="footer-p">Contact us:</p>
+			<a href="https://vk.com" target="_blank" rel="noreferrer noopener">
+				<img class="footer-icon" src="/assets/icons/vk.svg" alt="VK" />
+			</a>
+			<a
+				href="https://www.instagram.com"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				<img
+					class="footer-icon"
+					src="/assets/icons/instagram.svg"
+					alt="Instagram"
+				/>
+			</a>
+			<a href="https://twitter.com" target="_blank" rel="noreferrer noopener">
+				<img class="footer-icon" src="/assets/icons/twitter.svg" alt="Twitter" />
+			</a>
+			<p class="footer-p">©2021</p>
+		</footer>
+	</body>
 </html>

@@ -8,98 +8,105 @@
     <title>Add Game</title>
   </head>
   <body>
-    <header>
-      <a href="/" class="img-anchor">
-        <img class="img-header" src="../assets/icons/home.svg" alt="Home" />
-      </a>
-      <h3>Game World</h3>
-      <a href="/pages/addgame.html" class="img-anchor">
-        <img class="img-header" src="../assets/icons/plus.svg" alt="Add" />
-      </a>
-    </header>
-    <h1 class="head-line">ADD GAME</h1>
-    <form
-      method="POST"
-      action="/game"
-      class="add-area"
-      id="myForm"
-      enctype="multipart/form-data"
-    >
-      <div class="cols-wrapper">
-        <div class="image-upload">
-          <label for="image">
-            <img
-              src="../assets/icons/default-img.png"
-              alt="Image"
-              id="image-add"
-            />
-          </label>
-          <input type="file" name="image" id="image" />
-        </div>
-        <div class="col-title">
-          <ul>
-            <li class="filters-list-item">
-              <label class="filter-label" for="title">Title</label>
-              <input class="filter-input" type="text" name="title" id="title" />
-            </li>
-            <li class="filters-list-item">
-              <label class="filter-label" for="platform">Platform</label>
-              <select class="filter-input" name="platform" id="platform">
-                <option value="PC">PC</option>
-                <option value="Xbox">Xbox</option>
-                <option value="Playstation">Playstation</option>
-                <option value="Nintendo Switch">Nintendo Switch</option>
-              </select>
-            </li>
-            <li class="filters-list-item">
-              <label class="filter-label" for="genre">Genre</label>
-              <select class="filter-input" name="genre" id="genre">
-                <option value="Shooter">Shooter</option>
-                <option value="RPG">RPG</option>
-                <option value="Strategy">Strategy</option>
-                <option value="Racing">Racing</option>
-                <option value="Roguelike">Roguelike</option>
-                <option value="Simulator">Simulator</option>
-                <option value="Visual Novel">Visual Novel</option>
-              </select>
-            </li>
-            <li class="filters-list-item">
-              <label class="filter-label" for="maturity">
-                Maturity rating</label
-              >
-              <select class="filter-input" name="maturity" id="maturity">
-                <option value="4">4+</option>
-                <option value="12">12+</option>
-                <option value="16">16+</option>
-                <option value="18">18+</option>
-              </select>
-            </li>
-            <li class="filters-list-item">
-              <label class="filter-label" for="price">Price</label>
-              <input
-                class="filter-input"
-                type="number"
-                name="price"
-                id="price"
+    <div class="content">
+      <header>
+        <a href="/" class="img-anchor">
+          <img class="img-header" src="../assets/icons/home.svg" alt="Home" />
+        </a>
+        <h3>Game World</h3>
+        <a href="/pages/addgame.html" class="img-anchor">
+          <img class="img-header" src="../assets/icons/plus.svg" alt="Add" />
+        </a>
+      </header>
+      <h1 class="head-line">ADD GAME</h1>
+      <form
+        method="POST"
+        action="/game"
+        class="add-area"
+        id="myForm"
+        enctype="multipart/form-data"
+      >
+        <div class="cols-wrapper">
+          <div class="image-upload">
+            <label for="image">
+              <img
+                src="../assets/icons/default-img.png"
+                alt="Image"
+                id="image-add"
               />
-            </li>
-          </ul>
+            </label>
+            <input type="file" name="image" id="image" />
+          </div>
+          <div class="col-title">
+            <ul>
+              <li class="filters-list-item">
+                <label class="filter-label" for="title">Title</label>
+                <input
+                  class="filter-select"
+                  type="text"
+                  name="title"
+                  id="title"
+                />
+              </li>
+              <li class="filters-list-item">
+                <label class="filter-label" for="platform">Platform</label>
+                <select class="filter-select" name="platform" id="platform">
+                  <option value="PC">PC</option>
+                  <option value="Xbox">Xbox</option>
+                  <option value="Playstation">Playstation</option>
+                  <option value="Nintendo Switch">Nintendo Switch</option>
+                </select>
+              </li>
+              <li class="filters-list-item">
+                <label class="filter-label" for="genre">Genre</label>
+                <select class="filter-select" name="genre" id="genre">
+                  <option value="Shooter">Shooter</option>
+                  <option value="RPG">RPG</option>
+                  <option value="Strategy">Strategy</option>
+                  <option value="Racing">Racing</option>
+                  <option value="Roguelike">Roguelike</option>
+                  <option value="Simulator">Simulator</option>
+                  <option value="Visual Novel">Visual Novel</option>
+                </select>
+              </li>
+              <li class="filters-list-item">
+                <label class="filter-label" for="maturity">
+                  Maturity rating</label
+                >
+                <select class="filter-select" name="maturity" id="maturity">
+                  <option value="4">4+</option>
+                  <option value="12">12+</option>
+                  <option value="16">16+</option>
+                  <option value="18">18+</option>
+                </select>
+              </li>
+              <li class="filters-list-item">
+                <label class="filter-label" for="price">Price</label>
+                <input
+                  class="filter-select"
+                  type="number"
+                  name="price"
+                  id="price"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="add-bottom">
-        <div class="filters-list-item">
-          <label class="filter-label" for="desc">Description</label>
-          <textarea
-            class="filter-input"
-            name="desc"
-            id="desc"
-            cols="30"
-            rows="10"
-          ></textarea>
+        <div class="add-bottom">
+          <div class="filters-list-item">
+            <label class="filter-label" for="desc">Description</label>
+            <textarea
+              class="filter-select"
+              name="desc"
+              id="desc"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input class="add-button" type="submit" value="ADD" id="add" />
         </div>
-        <input class="add-button" type="submit" value="ADD" id="add" />
-      </div>
-    </form>
+      </form>
+    </div>
     <footer>
       <p class="footer-p">Contact us:</p>
       <a href="https://vk.com" target="_blank" rel="noreferrer noopener">

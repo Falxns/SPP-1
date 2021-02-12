@@ -102,4 +102,12 @@ app.get("/game/:id", function (req, res) {
     .catch(() => res.send("404"));
 });
 
+app.get("/delete/:id", function (req, res) {
+  const gameID = req.params.id;
+
+  Game.findByIdAndDelete(gameID)
+    .then(() => res.redirect("/"))
+    .catch(() => res.send("404"));
+});
+
 app.listen(3000, () => console.log("Server is listening.."));
